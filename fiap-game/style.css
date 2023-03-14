@@ -1,0 +1,12 @@
+div.container{
+    width: 400px;
+    height: auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}

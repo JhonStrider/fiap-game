@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" >
         <title>Demência</title>
-        </head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
     <div>
         <menu>
             <li><a href="../home.html">Home</a></li>
-            <li><a href="./pages/pesquisa.html">Pesquisa</a></li>
+            <li><a href="./pesquisa.html">Pesquisa</a></li>
             <li>Cadastro</li>
-            <li><a href="./pages/pick-balloon/pick-ballon.html">Pick Balloon</a></li>
+            <li><a href="./pick-balloon/pick-ballon.html">Pick Balloon</a></li>
         </menu>
     </div>
     <body>
-        <h1>Demência</h1>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-            Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero 
-            sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. 
-            Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
-            commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, 
-            eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar 
-            facilisis. Ut felis. 
-            Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
-            eu vulputate magna eros eu erat. Aliquam erat volutpat. 
-            Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
-        </p>
+
+        <p>Cadastro de Recepção de Newsletter:</p>
+
+        <div class = "container">
+            <form  action="./feedback.html" method="POST">
+                <div class="left">
+                    
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required> <br><br>
+                    <br><br>
+
+                    <label for="data-nascimento">Data de Nascimento:</label> <br>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required> <br><br>
+                    <br><br>
+
+                    <input type="submit" value="Cadastrar" >
+                </div>
+
+                <div class="right">
+                    <label for="sexo">Sexo:</label><br>
+                    
+                    <input type="radio" id="masculino" name="sexo" value="Masculino">
+                    <label for="masculino">Masculino</label><br>
+                    
+                    <input type="radio" id="feminino" name="sexo" value="Feminino">
+                    <label for="feminino">Feminino</label><br>
+                    
+                    <br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required> <br><br>
+                    
+                </div>
+
+
+            </form>     
+        </div>
     </body> 
 </html>
