@@ -3,12 +3,16 @@ div.container{
     height: auto;
 }
 
-.left{
+div .left{
     float: left;
 }
 
-.right{
+div .right{
     float: right;
+}
+
+footer{
+    clear:both;
 }
 
 html {
@@ -31,4 +35,15 @@ body{
 .menu li:hover {
     background: yellowgreen;
     color: sandybrown;
+}
+
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+    width: 60%;
+    
+}
+
+tr {
+    padding: 10px;
 }
